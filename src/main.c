@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "linked_list.h"
 #include "graph.h"
 #include "cycledetection.h"
 
@@ -17,7 +17,7 @@ void show_usage() {
 
 // First command line parameter - input file
 int main(int argc, char *argv[]) {
-
+	/*
 	// Error checking
 	if( argc != 2) {
 		show_usage();
@@ -28,5 +28,14 @@ int main(int argc, char *argv[]) {
 	graph *g = read_graph(argv[1]);
 
 	// Run cycle detection algorithm and output result
-	cycle_detection(g);
+	cycle_detection(g);*/
+	linked_list *test;
+	int *myData = 5;
+	int *myData2 = 7;
+	int *myData3 = 8;
+	add_element(test, myData);
+	add_element(test, myData2);
+	add_element(test, myData3);
+	add_element(test, myData);
+
 }
